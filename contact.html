@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+	<style>
+
+        form {
+            background: #f8f8f8;
+            max-width: 700px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        fieldset {
+            border: 1.5px solid #555555;
+			border-radius: 12px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+			font-size: 20px;
+        }
+		
+		label {
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		
+		label.inline {
+			display: inline;
+		}
+
+        input, select, textarea {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] { 
+            width: auto;
+			padding: 0;
+        }
+		
+		input[type="color"] {
+			padding: 0;
+			width: 50px;
+		}
+
+        input[type="submit"],
+		input[type="reset"]{
+			width: 100%;
+            background-color: #0077b6;
+            color: white;
+            font-size: 16px;
+			font-weight: bold;
+			border: none;
+			border-radius: 12px;
+			cursor: pointer;
+        }
+		
+    </style>
+</head>
+<body style="font-family: 'Times New Roman', serif; background-color: #c7eeff;">
+<a href="index.html"> Back to Homepage </a>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" min="1945-01-01" max="2025-12-31">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="1" max="100" step="1">
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <label>Gender</label>
+        
+        <input type="radio" name="gender" value="male" id="male"> 
+		<label for="male" class="inline">Male</label>
+		
+        <input type="radio" name="gender" value="female" id="female"> 
+		<label for="female" class="inline">Female</label>
+		
+        <input type="radio" name="gender" value="other" id="other"> 
+		<label for="other" class="inline">Other</label>
+       
+        <label>Skills</label>
+		
+        <input type="checkbox" name="skills" value="html" id="html"> 
+		<label for="html" class="inline">HTML</label>
+		
+        <input type="checkbox" name="skills" value="css" id="css"> 
+		<label for="css" class="inline">CSS</label>
+		
+        <input type="checkbox" name="skills" value="js" id="js"> 
+		<label for="js" class="inline">JavaScript</label>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="" selected>--Select Country--</option>
+			<option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <label for="experience">Experience (years)</label>
+        <input type="range" id="experience" name="experience" min="0" max="30" value="0">
+		
+		<label for="prefer_browse">Preferred browser</label>
+		<input id="prefer_browse" list="browsers" placeholder="Select or type a browser's name">
+		<datalist id="browsers">
+			<option value="Edge">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Details</legend>
+		
+        <label for="file">Upload CV</label>
+        <input type="file" id="file" name="file" multiple>
+
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" name="color">
+
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website">
+
+        <label for="search">Search Keyword</label>
+        <input type="search" id="search" name="search">
+
+        <label for="time">Preferred Contact Time</label>
+        <input type="time" id="time" name="time">
+		
+		<label for="message">Additional Information</label>
+        <textarea id="message" name="message" rows="5" cols="20" placeholder="Any additional details about yourself" style="resize: vertical; overflow: auto;"></textarea>
+
+    </fieldset>
+
+    <input type="submit">
+    <input type="reset">
+
+</form>
+
+<p style="text-align: right; font-size: 18px;"> <b> By Prabhash Acharya </b> <br> Class 11'H' <br> Roll no 837 </p>
+
+</body>
+</html>
+

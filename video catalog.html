@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Video Catalog </title>
+<style>
+.catalog {
+	max-width: 1600px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 500px);
+	gap: 20px;
+	font-size: 16px;
+}
+
+.card {
+	height:300px;
+	border-radius: 12px;
+	box-shadow: 6px 6px 5px #999999;
+	padding: 10px;
+	text-align: center;
+}
+
+.card video, .card iframe {
+	width: 100%;
+	height: 85%;
+	object-fit: cover;
+}
+
+p {
+	font-size: 18px;
+}
+</style>
+</head>
+<body>
+<a href="index.html"> Back to homepage </a>
+<h1 style="text-align: center;"> Video Catalog </h1>
+<div class="catalog">
+	<div class="card">
+	<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls> Your browser does not support this file. </video>
+	<p> Online MP4 </p>
+	</div>
+	
+	<div class="card">
+	<iframe title="vimeo-player" src="https://player.vimeo.com/video/112836958?h=d4a3a50265" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen> Your browser does not support iframes. </iframe>
+	<p> Video Using Iframe (Vimeo)</p>
+	</div>
+	
+	<div class="card">
+	<iframe title="vimeo-player" src="https://player.vimeo.com/video/203316849?h=57eaf45644" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>Your browser does not support iframes. </iframe>
+	<p> Video Using Iframe (Vimeo)</p>
+	</div>
+	
+	<div class="card">
+	<iframe title="vimeo-player" src="https://player.vimeo.com/video/10322240?h=7ef0825e59" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>Your browser does not support iframes. </iframe>
+	<p> Video Using Iframe (Vimeo)</p>
+	</div>
+	
+	<div class="card">
+	<video src="waterfall.mp4" controls> Your browser does not support this file. </video>
+	<p> Local MP4 </p>
+	</div>
+	
+	<div class="card">
+	<video src="river_video.mp4" controls> Your browser does not support this file. </video>
+	<p> Local MP4 </p>
+	</div>
+	
+</div>
+
+<p style="text-align: right; font-size: 18px;"> <b> By Prabhash Acharya </b> <br> Class 11'H' <br> Roll no 837 </p>
+
+</body>
+</html>
+	
+
